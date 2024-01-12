@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+   <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+
+    <div class="container">
+        <header class="d-flex flex-wrap py-3 mb-4 border-bottom" style="display: flex; justify-content: space-around;">
+            <div class="img" >
+              <a href="index.html" style="text-decoration: none; color: rgb(82, 81, 81);"><p>CodeBlocks</p></a> 
+             </div>
+        
+          <ul class="nav nav-pills">
+            <li><img src="images/html.png" width="30px"></li>
+            <li><img src="images/css.webp" width="30px"></li>
+            <li><img src="images/js.png" width="30px"></li>
+        </ul>
+
+        <button style="width: 200px; height: 40px; border: none; background-color: rgb(95, 93, 93); border-radius: 20px; "><a href="index.html" style=" text-decoration: none; color: white;">logout</a></button>
+        </header>
+      </div>
+
+
+
+
+
+      <div class="d-flex flex-column flex-md-row p-2 gap-2 py-md-2 align-items-center justify-content-center">
+        <div class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="light">
+          <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+            <div class="main1">
+                <textarea  id="html" placeholder="Write HTML code..." onkeyup="run()"></textarea>
+                <textarea  id="css" placeholder="Write CSS code..." onkeyup="run()" ></textarea>
+                <textarea  id="js" placeholder="Write JS code..." onkeyup="run()" ></textarea>
+                    </div>
+            </form>
+        </div>
+      
+        <div class=" d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" data-bs-theme="dark">
+            
+          <form class="p-2 mb-2 ">
+            <div class="main">
+            <p style="text-align: center;">Output Screen</p><hr>
+<iframe id="output"></iframe>
+
+</div>
+          </form>
+         
+        </div>
+      </div>
+
+
+      <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
